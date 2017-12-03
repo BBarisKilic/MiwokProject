@@ -27,14 +27,13 @@
         style="@style/CategoryStyle"
         android:background="@color/category_numbers"
         android:text="@string/category_numbers"
-        android:onClick="openNumbersLists"/>
+        />
 
     <TextView
         android:id="@+id/family"
         style="@style/CategoryStyle"
         android:background="@color/category_family"
         android:text="@string/category_family"
-        android:onClick="openFamily"
         />
 
     <TextView
@@ -42,7 +41,6 @@
         style="@style/CategoryStyle"
         android:background="@color/category_colors"
         android:text="@string/category_colors"
-        android:onClick="openColors"
         />
 
     <TextView
@@ -50,7 +48,6 @@
         style="@style/CategoryStyle"
         android:background="@color/category_phrases"
         android:text="@string/category_phrases"
-        android:onClick="openPhrases"
         />
 
 </LinearLayout>
