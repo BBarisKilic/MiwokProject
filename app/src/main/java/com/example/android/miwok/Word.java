@@ -9,16 +9,20 @@ public class Word {
     private String defaultTranslation;
     private int imageID = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
+    private int musicID;
 
-    public Word(String mivok,String english){
+    //phareses'ta imaj yok onun için bu ona özel bir constructor.
+    public Word(String mivok,String english, int musicResoucesID){
         mivokTranslation=mivok;
         defaultTranslation=english;
+        musicID=musicResoucesID;
     }
 
-    public Word(String mivok,String english,int resourceID){
+    public Word(String mivok,String english,int resourceID,int musicResourcesID){
         mivokTranslation=mivok;
         defaultTranslation=english;
         imageID=resourceID;
+        musicID=musicResourcesID;
     }
     public String getMivokTranslation(){
         return mivokTranslation;
@@ -31,5 +35,8 @@ public class Word {
     }
     public boolean hasImage(){
         return imageID != NO_IMAGE_PROVIDED;
+    }
+    public int getMusicID(){
+        return musicID;
     }
 }
